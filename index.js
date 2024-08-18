@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, {}).then(() => {
+mongoose.connect("mongodb+srv://singhpsv2002:helloWorld@cluster0.vtlvj.mongodb.net/?retryWrites=true", {}).then(() => {
   console.log("Connected to database.");
 })
 .catch((err) => {
